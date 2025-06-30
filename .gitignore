@@ -21,5 +21,7 @@ _testmain.go
 
 *.test
 *.prof
-ms-demo-golang
-ms-demo-node
+
+# Add names of microservices repositories (examples below)
+# ms-demo-golang
+# ms-demo-node
