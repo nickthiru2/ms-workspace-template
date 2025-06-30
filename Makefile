@@ -16,11 +16,10 @@ else
 			CHECKOUT_BIN:=bin/checkout-linux-arm
 		endif
 
-		CHECKOUT_BIN:=bin/checkout-linux
 	endif
 	ifeq ($(UNAME_S),Darwin)
 		ifeq ($(MNAME_S),x86_64)
-			CHECKOUT_BIN:=bin/checkout-mac
+			CHECKOUT_BIN:=bin/checkout-mac-intel
 		endif
 		ifeq ($(MNAME_S),arm64)
 			CHECKOUT_BIN:=bin/checkout-mac-applesilicon
