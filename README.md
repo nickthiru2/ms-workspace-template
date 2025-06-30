@@ -109,6 +109,8 @@ http://0.0.0.0:9880/
 - Run `make update` in the topmost repository to get the new codebase
 - Edit start.sh and stop.sh scripts under ./bin to add start and stop
   commands for the new module. Existing commands should be used as a guide.
+- Scripts such as start.sh and stop.sh should be made executable e.g. `chmod +x bin/start.sh bin/stop.sh`
+- Appropriate bin/checkout\* files should be made executable e.g. `chmod +x bin/checkout-linux-intel`
 - Make sure the docker-compose file for the service has labels required
   by Traefik 
   
