@@ -104,7 +104,7 @@ http://0.0.0.0:9880/
 
 ## How to add more microservices:
 
-- Edit config/repos.json
+- Edit fgs.json: Add repository names, URL, and branch name
 - Run `make update` in the topmost repository to get the new codebase
 - Edit start.sh and stop.sh scripts under ./bin to add start and stop
   commands for the new module. Existing commands should be used as a guide.
