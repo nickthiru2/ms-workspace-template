@@ -104,13 +104,13 @@ http://0.0.0.0:9880/
 
 ## How to add more microservices:
 
-- Edit fgs.json: Add repository names, URL, and branch name
-- Add microservice repository names to .gitignore
+- Edit `fgs.json`: Add repository names, URL, and branch name
+- Add microservice repository names to `.gitignore`
 - Run `make update` in the topmost repository to get the new codebase
-- Edit start.sh and stop.sh scripts under ./bin to add start and stop
+- Edit `start.sh` and `stop.sh` scripts under `./bin` to add start and stop
   commands for the new module. Existing commands should be used as a guide.
-- Scripts such as start.sh and stop.sh should be made executable e.g. `chmod +x bin/start.sh bin/stop.sh`
-- Appropriate bin/checkout\* files should be made executable e.g. `chmod +x bin/checkout-linux-intel`
+- Scripts such as `start.sh` and `stop.sh` should be made executable e.g. `chmod +x bin/start.sh bin/stop.sh`
+- Appropriate `bin/checkout*` files should be made executable e.g. `chmod +x bin/checkout-linux-intel`
 - Make sure the docker-compose file for the service has labels required
   by Traefik 
   
